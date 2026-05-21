@@ -1,0 +1,520 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Файл main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('main_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Файл main.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;random&gt;</code><br />
+<code>#include &lt;iomanip&gt;</code><br />
+<code>#include &lt;filesystem&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &quot;<a class="el" href="_teacher_8h_source.html">Teacher.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sorting_8h_source.html">sorting.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для main.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#amain_8cpp" loading="lazy" alt=""/></div>
+<!-- MAP 0 -->
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a5456c41f7f9aa2a36a7d80851a7b0be4" id="r_a5456c41f7f9aa2a36a7d80851a7b0be4"><td class="memItemLeft">static mt19937&#160;</td><td class="memItemRight"><a class="el" href="#a5456c41f7f9aa2a36a7d80851a7b0be4">gen</a> (<a class="el" href="#a5e7d225ba5a0794a0473ca8ddc08aaa3">rd</a>())</td></tr>
+<tr class="memitem:a160cf200a2645679a36b8d59122e6b51" id="r_a160cf200a2645679a36b8d59122e6b51"><td class="memItemLeft"><a class="el" href="struct_teacher.html">Teacher</a>&#160;</td><td class="memItemRight"><a class="el" href="#a160cf200a2645679a36b8d59122e6b51">generateRandomTeacher</a> ()</td></tr>
+<tr class="memitem:abf30766fe2d04ec832208af172796eb3" id="r_abf30766fe2d04ec832208af172796eb3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abf30766fe2d04ec832208af172796eb3">saveToCSV</a> (const vector&lt; <a class="el" href="struct_teacher.html">Teacher</a> &gt; &amp;data, const string &amp;filename)</td></tr>
+<tr class="memitem:af3a59f6813a7865f71aeffd9382e24a6" id="r_af3a59f6813a7865f71aeffd9382e24a6"><td class="memItemLeft">vector&lt; <a class="el" href="struct_teacher.html">Teacher</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#af3a59f6813a7865f71aeffd9382e24a6">loadFromCSV</a> (const string &amp;filename)</td></tr>
+<tr class="memitem:a4b60649f1ea2539e357247e7f6c3103e" id="r_a4b60649f1ea2539e357247e7f6c3103e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4b60649f1ea2539e357247e7f6c3103e">generateTestFiles</a> (const string &amp;dir, const vector&lt; size_t &gt; &amp;sizes)</td></tr>
+<tr class="memitem:ac3770d7062350cb5e481deca1ae48288" id="r_ac3770d7062350cb5e481deca1ae48288"><td class="memTemplParams" colspan="2">template&lt;typename SortFunc&gt; </td></tr>
+<tr class="memitem:ac3770d7062350cb5e481deca1ae48288 template"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ac3770d7062350cb5e481deca1ae48288">measureTime</a> (vector&lt; <a class="el" href="struct_teacher.html">Teacher</a> &gt; data, SortFunc sortFunc)</td></tr>
+<tr class="memitem:afcf9b31c6411e740d7151b7ec993df15" id="r_afcf9b31c6411e740d7151b7ec993df15"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afcf9b31c6411e740d7151b7ec993df15">saveSortedArrayToFile</a> (const vector&lt; <a class="el" href="struct_teacher.html">Teacher</a> &gt; &amp;data, const string &amp;filename, const string &amp;algorithmName)</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a5e7d225ba5a0794a0473ca8ddc08aaa3" id="r_a5e7d225ba5a0794a0473ca8ddc08aaa3"><td class="memItemLeft">static random_device&#160;</td><td class="memItemRight"><a class="el" href="#a5e7d225ba5a0794a0473ca8ddc08aaa3">rd</a></td></tr>
+<tr class="memitem:a01a4bfd3453a925d037934578ffa8175" id="r_a01a4bfd3453a925d037934578ffa8175"><td class="memItemLeft">static const vector&lt; string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a01a4bfd3453a925d037934578ffa8175">faculties</a> = {&quot;ФИиВТ&quot;, &quot;ИЭиУ&quot;, &quot;ЕМФ&quot;, &quot;ГФ&quot;, &quot;ЮФ&quot;}</td></tr>
+<tr class="memitem:afb2e59d00096ac1fa7ba7347bd40a07a" id="r_afb2e59d00096ac1fa7ba7347bd40a07a"><td class="memItemLeft">static const vector&lt; string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#afb2e59d00096ac1fa7ba7347bd40a07a">titles</a> = {&quot;ассистент&quot;, &quot;старший преподаватель&quot;, &quot;доцент&quot;, &quot;профессор&quot;}</td></tr>
+<tr class="memitem:a6d9a53b281620b6ce1576c38d43b017f" id="r_a6d9a53b281620b6ce1576c38d43b017f"><td class="memItemLeft">static const vector&lt; string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a6d9a53b281620b6ce1576c38d43b017f">degrees</a> = {&quot;без степени&quot;, &quot;кандидат наук&quot;, &quot;доктор наук&quot;}</td></tr>
+<tr class="memitem:ae5ef839a3c7e5e57135ff02f06f70a5a" id="r_ae5ef839a3c7e5e57135ff02f06f70a5a"><td class="memItemLeft">static const vector&lt; string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ae5ef839a3c7e5e57135ff02f06f70a5a">names</a></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Функции</h2>
+<a id="a5456c41f7f9aa2a36a7d80851a7b0be4" name="a5456c41f7f9aa2a36a7d80851a7b0be4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5456c41f7f9aa2a36a7d80851a7b0be4">&#9670;&#160;</a></span>gen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mt19937 gen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a5e7d225ba5a0794a0473ca8ddc08aaa3">rd</a>()</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_a5456c41f7f9aa2a36a7d80851a7b0be4_icgraph.png" border="0" usemap="#amain_8cpp_a5456c41f7f9aa2a36a7d80851a7b0be4_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 1 -->
+</div>
+
+</div>
+</div>
+<a id="a160cf200a2645679a36b8d59122e6b51" name="a160cf200a2645679a36b8d59122e6b51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a160cf200a2645679a36b8d59122e6b51">&#9670;&#160;</a></span>generateRandomTeacher()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_teacher.html">Teacher</a> generateRandomTeacher </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_a160cf200a2645679a36b8d59122e6b51_cgraph.png" border="0" usemap="#amain_8cpp_a160cf200a2645679a36b8d59122e6b51_cgraph" loading="lazy" alt=""/></div>
+<!-- MAP 2 -->
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_a160cf200a2645679a36b8d59122e6b51_icgraph.png" border="0" usemap="#amain_8cpp_a160cf200a2645679a36b8d59122e6b51_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 3 -->
+</div>
+
+</div>
+</div>
+<a id="a4b60649f1ea2539e357247e7f6c3103e" name="a4b60649f1ea2539e357247e7f6c3103e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b60649f1ea2539e357247e7f6c3103e">&#9670;&#160;</a></span>generateTestFiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void generateTestFiles </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>dir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const vector&lt; size_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sizes</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_a4b60649f1ea2539e357247e7f6c3103e_cgraph.png" border="0" usemap="#amain_8cpp_a4b60649f1ea2539e357247e7f6c3103e_cgraph" loading="lazy" alt=""/></div>
+<!-- MAP 4 -->
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_a4b60649f1ea2539e357247e7f6c3103e_icgraph.png" border="0" usemap="#amain_8cpp_a4b60649f1ea2539e357247e7f6c3103e_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 5 -->
+</div>
+
+</div>
+</div>
+<a id="af3a59f6813a7865f71aeffd9382e24a6" name="af3a59f6813a7865f71aeffd9382e24a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3a59f6813a7865f71aeffd9382e24a6">&#9670;&#160;</a></span>loadFromCSV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; <a class="el" href="struct_teacher.html">Teacher</a> &gt; loadFromCSV </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_af3a59f6813a7865f71aeffd9382e24a6_icgraph.png" border="0" usemap="#amain_8cpp_af3a59f6813a7865f71aeffd9382e24a6_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 6 -->
+</div>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.png" border="0" usemap="#amain_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" loading="lazy" alt=""/></div>
+<!-- MAP 7 -->
+</div>
+
+</div>
+</div>
+<a id="ac3770d7062350cb5e481deca1ae48288" name="ac3770d7062350cb5e481deca1ae48288"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3770d7062350cb5e481deca1ae48288">&#9670;&#160;</a></span>measureTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SortFunc&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">double measureTime </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; <a class="el" href="struct_teacher.html">Teacher</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SortFunc</td>          <td class="paramname"><span class="paramname"><em>sortFunc</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_ac3770d7062350cb5e481deca1ae48288_icgraph.png" border="0" usemap="#amain_8cpp_ac3770d7062350cb5e481deca1ae48288_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 8 -->
+</div>
+
+</div>
+</div>
+<a id="afcf9b31c6411e740d7151b7ec993df15" name="afcf9b31c6411e740d7151b7ec993df15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcf9b31c6411e740d7151b7ec993df15">&#9670;&#160;</a></span>saveSortedArrayToFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void saveSortedArrayToFile </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; <a class="el" href="struct_teacher.html">Teacher</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>algorithmName</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_afcf9b31c6411e740d7151b7ec993df15_icgraph.png" border="0" usemap="#amain_8cpp_afcf9b31c6411e740d7151b7ec993df15_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 9 -->
+</div>
+
+</div>
+</div>
+<a id="abf30766fe2d04ec832208af172796eb3" name="abf30766fe2d04ec832208af172796eb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf30766fe2d04ec832208af172796eb3">&#9670;&#160;</a></span>saveToCSV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void saveToCSV </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; <a class="el" href="struct_teacher.html">Teacher</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_abf30766fe2d04ec832208af172796eb3_icgraph.png" border="0" usemap="#amain_8cpp_abf30766fe2d04ec832208af172796eb3_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 10 -->
+</div>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Переменные</h2>
+<a id="a6d9a53b281620b6ce1576c38d43b017f" name="a6d9a53b281620b6ce1576c38d43b017f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d9a53b281620b6ce1576c38d43b017f">&#9670;&#160;</a></span>degrees</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const vector&lt;string&gt; degrees = {&quot;без степени&quot;, &quot;кандидат наук&quot;, &quot;доктор наук&quot;}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01a4bfd3453a925d037934578ffa8175" name="a01a4bfd3453a925d037934578ffa8175"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01a4bfd3453a925d037934578ffa8175">&#9670;&#160;</a></span>faculties</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const vector&lt;string&gt; faculties = {&quot;ФИиВТ&quot;, &quot;ИЭиУ&quot;, &quot;ЕМФ&quot;, &quot;ГФ&quot;, &quot;ЮФ&quot;}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae5ef839a3c7e5e57135ff02f06f70a5a" name="ae5ef839a3c7e5e57135ff02f06f70a5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5ef839a3c7e5e57135ff02f06f70a5a">&#9670;&#160;</a></span>names</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const vector&lt;string&gt; names</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Инициализатор</b><div class="fragment"><div class="line">                          = {</div>
+<div class="line">    <span class="stringliteral">&quot;Иванов И.И.&quot;</span>, <span class="stringliteral">&quot;Петров П.П.&quot;</span>, <span class="stringliteral">&quot;Сидоров С.С.&quot;</span>, <span class="stringliteral">&quot;Кузнецов К.К.&quot;</span>, <span class="stringliteral">&quot;Смирнова А.А.&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;Васильева В.В.&quot;</span>, <span class="stringliteral">&quot;Михайлов М.М.&quot;</span>, <span class="stringliteral">&quot;Федорова Ф.Ф.&quot;</span>, <span class="stringliteral">&quot;Морозов М.М.&quot;</span>, <span class="stringliteral">&quot;Волков В.В.&quot;</span></div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5e7d225ba5a0794a0473ca8ddc08aaa3" name="a5e7d225ba5a0794a0473ca8ddc08aaa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e7d225ba5a0794a0473ca8ddc08aaa3">&#9670;&#160;</a></span>rd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">random_device rd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb2e59d00096ac1fa7ba7347bd40a07a" name="afb2e59d00096ac1fa7ba7347bd40a07a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb2e59d00096ac1fa7ba7347bd40a07a">&#9670;&#160;</a></span>titles</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const vector&lt;string&gt; titles = {&quot;ассистент&quot;, &quot;старший преподаватель&quot;, &quot;доцент&quot;, &quot;профессор&quot;}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="main_8cpp.html">main.cpp</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

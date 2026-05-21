@@ -1,0 +1,20 @@
+# Xcode
+*.xcodeproj
+*.xcworkspace
+DerivedData/
+build/
+*.xcuserstate
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Данные (опционально — если они большие)
+# data/
+# results/
+
+# Временные файлы
+*.tmp
+*.log
+.DS_Store
