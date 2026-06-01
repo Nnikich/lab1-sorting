@@ -4,7 +4,6 @@
 #include <vector>
 #include <chrono>
 #include <random>
-#include <iomanip>
 #include <filesystem>
 #include <algorithm>
 #include "Teacher.h"
@@ -138,7 +137,7 @@ int main() {
         vector<Teacher> original = loadFromCSV(filename);
         cout << "Testing size: " << n << endl;
 
-        // Копируем для каждого алгоритма
+        // Копируем для каждого
         double tBubble = 0.0, tQuick = 0.0, tMerge = 0.0, tStd = 0.0;
         // Для больших массивов пузырёк может быть слишком долгим – пропускаем при n > 20000?
         if (n <= 20000) {
